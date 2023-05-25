@@ -1,0 +1,15 @@
+ALGORITHM inser_sort
+VAR
+    Myarray : ARRAY_OF INTEGER;
+    curr:INTEGER:= Myarray[i] 
+    pre:INTEGER:=i-1  
+    i:INTEGER
+BEGIN
+    FOR i FROM 1 TO Myarray.length-1 STEP step 1  DO
+        WHILE (pre>=0 and Myarray[pre] > curr ) DO
+            Myarray[pre+1]:= Myarray[pre] 
+             pre = pre -1
+        END_WHILE 
+        Myarray[pre+1] = curr
+    END_FOR
+END
